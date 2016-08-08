@@ -1,10 +1,166 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: London Rooftop Home
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
+<!-- Your banner code -->
+
+<div class="banner" style="background-image: linear-gradient(135deg, rgba(229, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.2) 0%), url('images/banner-background.jpg');">
+  <div class="banner-content">
+    <h1>London Rooftops</h1>
+    <p>The Guide to 100s of London's best rooftops</p>
+    <form action="/" class="form-inline">
+      <input type="text" id="location" class="form-control" placeholder="London, UK">
+      <input type="text" id="date" class="form-control" placeholder="Friday, 5 August"">
+      <select name="" id="type-of-bar" class="form-control">
+        <option value="1">Type of rooftop</option>
+        <option value="2">Classy</option>
+        <option value="3">Hipster</option>
+        <option value="4">Indie</option>
+        <option value="5">"Student budget"</option>
+      </select>
+      <input type="submit" value="Search" class="btn btn-danger">
+    </form>
+  </div>
+</div>
+
+<!-- Your features code -->
+
+<div class="wrapper-features">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="text-center">
+          <img src="images/beer.png" alt="Beer icon">
+          <h2>Refreshing drinks</h2>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="text-center">
+          <img src="images/dollar.png" alt="Beer icon">
+          <h2>Value for money</h2>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="text-center">
+          <img src="images/globe.png" alt="Beer icon">
+          <h2>Make global friends</h2>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="text-center">
+          <img src="images/heart.png" alt="Beer icon">
+          <h2>Fall in love with London</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Your cards code -->
+
+<div id="content" class="wrapper-cards">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Your next rooftop awaits...</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="card" style="background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 65%), url('images/seb-rooftop.jpg');">
+          <a href="#" class="card-link"></a>
+          <img class="card-owner avatar-small" src="images/avatar.jpg" alt="Profile picture" class="avatar-small">
+          <div class="card-location">Shoreditch</div>
+          <div class="card-info">
+            <h2>Ruby</h2>
+            <p>Better than any PHP bar in London</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="card" style="background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 65%), url('images/romain-rooftop.jpg');">
+          <a href="#" class="card-link"></a>
+          <img class="card-owner avatar-small" src="images/romain.jpg" alt="Profile picture" class="avatar-small">
+          <div class="card-location">Shoreditch</div>
+          <div class="card-info">
+            <h2>Le Wagon</h2>
+            <p>Coding themed bar with stunning views of a construction site</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="card" style="background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 65%), url('images/boris-rooftop.jpg');">
+          <a href="#" class="card-link"></a>
+          <img class="card-owner avatar-small" src="images/boris.jpg" alt="Profile picture" class="avatar-small">
+          <div class="card-location">Canary Wharf</div>
+          <div class="card-info">
+            <h2>Snail's delight</h2>
+            <p>French rooftop serving snails and cheese</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="card" style="background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 65%), url('images/ed-rooftop.jpg');">
+          <a href="#" class="card-link"></a>
+          <img class="card-owner avatar-small" src="images/ed-ward.jpg" alt="Profile picture" class="avatar-small">
+          <div class="card-location">Botswana</div>
+          <div class="card-info">
+            <h2>Afrikaans Adventure</h2>
+            <p>Botswana themed bar with authentic drinks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Your newsletter code -->
+
+<div class="wrapper-newsletter" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 80%), url('images/banner-background.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+        <div class="newsletter text-center">
+          <h2>Find the best rooftops</h2>
+          <form action="/">
+            <label for="newsletter-email">Subscribe to our newsletter below</label>
+            <input type="email" class="form-control" placeholder="example@mail.com" id="newsletter-email">
+            <input type="submit" value="Apply" class="btn btn-danger">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Your map code -->
+
+<div class="map">
+  <h2>Search in your local area...</h2>
+
+  <div class="google-map">
+    <div id="map" style="width: 100%; height: 400px;"></div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(51.521356, -0.076686);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+    });
+    </script>
+  </div>
 </div>

@@ -1,0 +1,27 @@
+/* Your banner CSS code here */
+
+.banner {
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.banner-content {
+  text-align: center;
+  flex: 1 0 auto;
+  color: $white;
+  line-height: 30px;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.banner-content p {
+  margin-bottom: 60px;
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.banner-content form {
+  color: black;
+}

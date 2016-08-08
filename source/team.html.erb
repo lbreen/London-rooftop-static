@@ -1,0 +1,33 @@
+---
+title: Our team
+---
+
+<div class="wrapper-profile">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="list-inline text-center">
+          <% data.founders.each do |founder, info| %>
+          <li>
+            <%= image_tag info.picture, class: "img-circle avatar-large" %>
+            <h2><%= founder.capitalize %></h2>
+            <h3><%= info.role.capitalize %></h3>
+          </li>
+        <% end %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="list-inline text-center">
+          <% data.team_members.each do |member, info| %>
+            <li>
+              <%= image_tag info.picture, class: "img-circle avatar-large" %>
+              <h2><%= member.capitalize %></h2>
+              <h3><%= info.role.capitalize %></h3>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
