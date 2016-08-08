@@ -27,3 +27,22 @@
     color: $gray-light;
   }
 }
+
+.rooftop-description-wrapper {
+  padding: 80px 150px;
+  background-color: $light-grey;
+  h2 {
+    text-align: left;
+  }
+}
+
+.rooftop-data {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  i {
+    flex: 0 0 auto;
+    padding: 5px;
+  }
+}
+
