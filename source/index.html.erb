@@ -28,30 +28,12 @@ title: London Rooftop Home
 <div class="wrapper-features">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="text-center">
-          <img src="images/beer.png" alt="Beer icon">
-          <h2>Refreshing drinks</h2>
+      <% data.features.each do |feature| %>
+        <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+          <%= image_tag feature.picture %>
+          <h2><%= feature.quote %></h2>
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="text-center">
-          <img src="images/dollar.png" alt="Beer icon">
-          <h2>Value for money</h2>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="text-center">
-          <img src="images/globe.png" alt="Beer icon">
-          <h2>Make global friends</h2>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="text-center">
-          <img src="images/heart.png" alt="Beer icon">
-          <h2>Fall in love with London</h2>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>
@@ -66,50 +48,21 @@ title: London Rooftop Home
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-md-6">
-        <div class="card" style="background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 65%), url('images/seb-rooftop.jpg');">
-          <%= link_to "", "rooftops/ruby.html", class: "card-link" %>
-          <img class="card-owner avatar-small" src="images/seb.jpg" alt="Profile picture" class="avatar-small">
-          <div class="card-location">Shoreditch</div>
-          <div class="card-info">
-            <h2>Ruby</h2>
-            <p>Better than any PHP bar in London</p>
+      <% data.rooftops.each do |rooftop_name, rooftop| %>
+        <div class="col-xs-12 col-md-6">
+          <div class="card" style="background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 65%), url('<%= image_path rooftop.rooftop_photo %>');">
+            <%= link_to "", rooftop.url, class: "card-link"%>
+            <%= image_tag rooftop.owner_photo, class: "card-owner avatar-small"%>
+            <div class="card-location">
+              <%= rooftop.location %>
+            </div>
+            <div class="card-info">
+              <h2><%= rooftop.rooftop_name %></h2>
+              <p><%= rooftop.tagline%></p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="card" style="background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 65%), url('images/romain-rooftop.jpg');">
-          <%= link_to "", "rooftops/le_wagon.html", class: "card-link" %>
-          <img class="card-owner avatar-small" src="images/romain.jpg" alt="Profile picture" class="avatar-small">
-          <div class="card-location">Shoreditch</div>
-          <div class="card-info">
-            <h2>Le Wagon</h2>
-            <p>Coding themed bar with stunning views of a construction site</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="card" style="background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 65%), url('images/boris-rooftop.jpg');">
-          <%= link_to "", "rooftops/smails_delight.html", class: "card-link" %>
-          <img class="card-owner avatar-small" src="images/boris.jpg" alt="Profile picture" class="avatar-small">
-          <div class="card-location">Canary Wharf</div>
-          <div class="card-info">
-            <h2>Snail's delight</h2>
-            <p>French rooftop serving snails and cheese</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="card" style="background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 65%), url('images/edward-rooftop.jpg');">
-          <%= link_to "", "rooftops/afrikaans_adventure.html", class: "card-link" %>
-          <img class="card-owner avatar-small" src="images/edward.jpg" alt="Profile picture" class="avatar-small">
-          <div class="card-location">Botswana</div>
-          <div class="card-info">
-            <h2>Afrikaans Adventure</h2>
-            <p>Botswana themed bar with authentic drinks</p>
-          </div>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>
