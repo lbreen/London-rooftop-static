@@ -31,6 +31,10 @@ activate :autoprefixer
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
+["ruby", "le_wagon", "snails_delight", "afrikaans_adventure"].each do |name|
+  proxy "/rooftops/#{name}.html", "/rooftops/show.html", :locals => { :rooftop_name => name }, :ignore => true
+end
+
 ###
 # Helpers
 ###
@@ -89,3 +93,5 @@ activate :deploy do |deploy|
   # deploy.strategy = :submodule # commit strategy: can be :force_push or :submodule, default: :force_push
   # deploy.commit_message = 'custom-message' # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
+
+
