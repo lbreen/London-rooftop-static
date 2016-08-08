@@ -17,7 +17,10 @@ le_wagon:
   rooftop_name: Le Wagon
   location: Shoreditch, London
   rating: 5
-  description: Coding themed bar with stunning views of a construction site. Situated on Elder Street, this incredible rooftop is a stones throw from the edgy Spitalfields market.
+  description: |
+    Coding themed bar with stunning views of a construction site.
+    Situated on Elder Street, this incredible rooftop is a stones
+    throw from the edgy Spitalfields market.
   type_of_drinks: Spirits and mixers
   wifi: Free wifi
   tube_travel_time: 5 mins from Shoreditch High Street station
