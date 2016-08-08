@@ -5,7 +5,10 @@ ruby:
   rooftop_name: Ruby
   location: Shoreditch, London
   rating: 4
-  description: Better than any PHP bar in London. This rooftop offers fantastic gem-themed cocktails with a wide pice range to suit any budget. With large sofa areas to relax in, it is a perfect destination for any group.
+  description: |
+    Better than any PHP bar in London. This rooftop offers fantastic gem-themed
+    cocktails with a wide pice range to suit any budget. With large sofa areas
+    to relax in, it is a perfect destination for any group.
   type_of_drinks: Cocktails
   wifi: Free wifi
   tube_travel_time: 10 mins from Liverpool Street Station
@@ -32,7 +35,11 @@ snails_delight:
   rooftop_name: Snail's Delight
   location: Canary Wharf, London
   rating: 2
-  description: London's best French rooftop, serving cheese and snail platters all night. This bar offers incredible views of Canary Wharf, with an equally stunning atmosphere. Snail's Delight is a particularly popular destination with the local workers in the City.
+  description: |
+    London's best French rooftop, serving cheese and snail platters all night.
+    This bar offers incredible views of Canary Wharf, with an equally stunning
+    atmosphere. Snail's Delight is a particularly popular destination with the
+    local workers in the City.
   type_of_drinks: French
   wifi: Free wifi
   tube_travel_time: 2 mins from South Quay DLR station or 5 mins from Canary Wharf tube station.
@@ -44,7 +51,11 @@ afrikaans_adventure:
   rooftop_name: Afrikaans Adventure
   location: Botswana, London
   rating: 5
-  description: This rooftop draws inspiration from Bostwana rich history with many authentic Bostwanan drinks. Afrikaans Adventure is highly popular with London's university students with its daily happy hour from 17:00 to 19:00. The bar has beautiful interior design features with authentic decoration.
+  description: |
+    This rooftop draws inspiration from Bostwana rich history with many
+    authentic Bostwanan drinks. Afrikaans Adventure is highly popular with
+    London's university students with its daily happy hour from 17:00 to 19:00.
+    The bar has beautiful interior design features with authentic decoration.
   type_of_drinks: Spirits and mixers
   wifi: Free wifi
   tube_travel_time: 5 mins from Shoreditch High Street station
