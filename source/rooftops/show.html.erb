@@ -1,0 +1,47 @@
+<!-- source/flats/show.html.erb -->
+
+<!-- Read from data.flats with owner's name as key -->
+<% rooftop = data.rooftops[rooftop_name] %>
+
+<!-- Inject rooftop data in template -->
+<div class="rooftop-header-wrapper">
+  <div class="rooftop-banner" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 80%), url('<%= image_path rooftop.rooftop_photo%>');">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-1">
+        <div class="rooftop-owner-info">
+          <%= image_tag rooftop.owner_photo, class: "avatar-large" %>
+          <div class="rooftop-info">
+            <h1><%=rooftop.rooftop_name%></h1>
+            <p><%=rooftop.location%></p>
+            <p>Ratings</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+        <div class="rooftop-reservation">
+          <%= partial "reservation-form" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="rooftop-description-wrapper">
+  <div class="rooftop-description">
+    <h2>
+      About this rooftop
+    </h2>
+    <p>
+      <%= rooftop.description %>
+    </p>
+  </div>
+  <div class="rooftop-data">
+    <i class="fa fa-glass" aria-hidden="true">  Type of drinks: <%= rooftop.type_of_drinks%></i>
+    <i class="fa fa-wifi" aria-hidden="true">  <%= rooftop.wifi %></i>
+    <i class="fa fa-subway" aria-hidden="true">   <%= rooftop.tube_travel_time %></i>
+    <i class="fa fa-users" aria-hidden="true">  Max occupancy: <%= rooftop.max_occupancy %></i>
+  </div>
+</div>
+
