@@ -1,0 +1,23 @@
+<div class="rooftop-wrapper">
+  <div class="rooftop-banner" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 80%), url('../images/seb-rooftop.jpg');">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-1">
+        <div class="rooftop-owner-info">
+          <%= image_tag 'seb.jpg', class: "avatar-large" %>
+          <div class="rooftop-info">
+            <h1>Ruby</h1>
+            <p>Shoreditch, London</p>
+            <p>ratings</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+        <div class="rooftop-reservation">
+          <%= partial "reservation-form" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
